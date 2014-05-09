@@ -1,0 +1,23 @@
+.ui-view-container
+  position relative
+
+  [ui-view]
+    
+    &.ng-leave
+      
+      position absolute 
+      left 0 
+      right 0
+      opacity 1
+      
+      -webkit-transition all .5s ease-in-out 
+      -moz-transition all .5s ease-in-out 
+      -o-transition all .5s ease-in-out 
+      transition all .5s ease-in-out
+      
+      -webkit-transform translate3d(0, 0, 0)
+      -moz-transform translate3d(0, 0, 0)
+      transform translate3d(0, 0, 0)
+
+    &.ng-leave-active
+      opacity 0

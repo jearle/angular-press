@@ -1,0 +1,9 @@
+
+.je-posts-container
+  .info {{ jePosts.category.description }}
+
+  .posts
+    ul 
+      li(ng-repeat="post in jePosts.posts")
+        h2(ng-bind-html="post.title")
+        .description(ng-bind-html="post.content")

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+apt-get update
+apt-get upgrade
+
+apt-get install vsftpd git vim curl apache2 mysql-server php5 php-pear php5-mysql -y
+
+git clone git@github.com:WordPress/WordPress.git
+
+echo -e "<?php phpinfo(); ?>" > /var/www/info.php

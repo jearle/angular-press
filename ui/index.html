@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Jesse Earle</title>
+</head>
+<body ng-controller="RootController">
+  <h1>Jesse Earle!</h1>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#/">
+            home
+          </a>
+        </li>
+        <li>
+          <a href="#/jobs">
+            jobs
+          </a>
+        </li>
+        <li>
+          <a href="#/works">
+            works
+          </a>
+        </li>
+        <li>
+          <a href="#/projects">
+            projects
+          </a>
+        </li>
+        <li>
+          <a href="#/words">
+            words
+          </a>
+        </li>
+        <li>
+          <a href="#/contacts">
+            contacts
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <article class="ui-view-container">
+    <div ui-view></div> 
+  </article>
+
+  <script type="text/javascript" src="build/dev.js"></script>
+</body>
+</html>

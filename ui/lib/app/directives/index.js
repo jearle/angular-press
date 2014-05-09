@@ -1,0 +1,2 @@
+require('./posts');
+require('./page');
