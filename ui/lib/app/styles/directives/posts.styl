@@ -1,3 +1,37 @@
 
-ul
-  margin 0
+.je-posts-container
+  
+  .info
+    margin-bottom 40px
+    font-size 20px
+    font-style italic
+
+  .posts
+    
+    ul
+
+      li
+        
+        h2
+          font-size 20px
+
+        .description
+
+          h3
+            font-size 35px
+            font-weight 400
+
+          ul
+            
+            &:before,
+            &:after
+              content ""
+              display table
+
+            &:after
+              clear both
+
+            li
+              float left
+              font-size 15px
+              margin-right 10px

@@ -1,48 +1,64 @@
 <html>
 <head>
   <title>Jesse Earle</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 </head>
 <body ng-controller="RootController">
-  <h1>Jesse Earle!</h1>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="#/">
+          home
+        </a>
+      </li>
+      <li>
+        <a href="#/jobs">
+          jobs
+        </a>
+      </li>
+      <li>
+        <a href="#/works">
+          works
+        </a>
+      </li>
+      <li>
+        <a href="#/projects">
+          projects
+        </a>
+      </li>
+      <li>
+        <a href="#/words">
+          words
+        </a>
+      </li>
+      <li>
+        <a href="#/contacts">
+          contacts
+        </a>
+      </li>
+    </ul>
+  </nav>
+
   <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="#/">
-            home
-          </a>
-        </li>
-        <li>
-          <a href="#/jobs">
-            jobs
-          </a>
-        </li>
-        <li>
-          <a href="#/works">
-            works
-          </a>
-        </li>
-        <li>
-          <a href="#/projects">
-            projects
-          </a>
-        </li>
-        <li>
-          <a href="#/words">
-            words
-          </a>
-        </li>
-        <li>
-          <a href="#/contacts">
-            contacts
-          </a>
-        </li>
-      </ul>
-    </nav>
+    
+    <h1>Jesse Earle</h1>
+
+    <div id="menu_button">
+      <a href="javascript:void(0)">
+        <div class="hamburger-block"></div>
+        <div class="hamburger-block"></div>
+        <div class="hamburger-block"></div>
+      </a>
+    </div>
+
   </header>
 
   <article class="ui-view-container">
-    <div ui-view></div> 
+    <div ui-view></div>
   </article>
 
   <script type="text/javascript" src="build/dev.js"></script>

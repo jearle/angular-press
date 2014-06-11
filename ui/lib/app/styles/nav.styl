@@ -1,0 +1,92 @@
+
+#menu_button
+  position fixed
+  top 54px
+  right 54px
+  z-index 101
+
+  a
+    .hamburger-block
+      position relative
+      background black
+      width 20px
+      height 3px
+      margin-bottom 3px
+      transition -webkit-transform .15s linear, top .15s linear
+      top 0px
+
+      &.positive-top-offset
+        top 6px
+
+      &.negative-top-offset
+        top -6px
+
+      &.x-1
+        -webkit-transform rotate(45deg)
+
+      &.x-2
+        opacity 0
+
+      &.x-3
+        -webkit-transform rotate(-45deg)
+
+nav
+  font-family "Open Sans"
+  font-size 40px
+  text-align left
+  padding-top 20px
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  opacity 0
+  transition opacity .33s
+  background white
+  z-index -1
+  overflow-y scroll
+  overflow-x hidden
+
+  &.shown
+    z-index 100
+    opacity 1
+  &.positive-z
+    z-index 100
+
+  ul
+    list-style-type none
+    margin -200px
+    padding 0
+    margin-top 20px
+    transition margin .6s
+
+    &.shown
+      margin-left 20px
+
+    li
+      opacity 0
+      transition opacity .66s, margin-left .66s
+
+      &.shown
+        margin-left 20px
+        opacity 1
+
+      &.faster-opacity-transition
+        transition opacity .33s, margin-left .66s
+        
+
+      &.je-hidden
+        margin-left -200px
+        opacity 0
+
+      a
+        text-decoration none
+        color black
+        display block
+        padding 5px
+        font-weight 300
+        transition all .3s
+
+        &:hover
+          color red
+          text-decoration none

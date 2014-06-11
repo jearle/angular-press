@@ -14,3 +14,5 @@ require('./app/controllers');
 require('./app/directives');
 
 angular.bootstrap(document.body, ['jeJesseEarle']);
+
+require('./page/nav');

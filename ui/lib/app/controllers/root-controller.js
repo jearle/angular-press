@@ -3,11 +3,10 @@ var app = require('../app');
 
 var name = 'RootController';
 var deps = [
-  '$scope',
-  '$state'
+  '$scope'
 ];
 
-function RootController ($scope, $state) {
+function RootController ($scope) {
 
 }
 
